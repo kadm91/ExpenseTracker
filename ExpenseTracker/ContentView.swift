@@ -9,16 +9,60 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    title
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+            }
+            .background(Color.background)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem {
+                    notificationIcon
+                }
+            }
         }
-        .padding()
+    
     }
 }
 
-#Preview {
+
+//MARK: - ContentView Extensions
+
+extension ContentView {
+    
+    //MARK: - Notification Icon
+    
+    var notificationIcon: some View {
+        Image(systemName: "bell.badge")
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(Color.icon, .primary)
+    }
+    
+    //MARK: - Title
+    
+    var title: some View {
+        Text("Overview")
+            .font(.title2)
+            .bold()
+        
+    }
+}
+
+
+//MARK: - Light Mode Preview
+
+#Preview("Light Mode Preview"){
     ContentView()
+
+}
+
+//MARK: - Dark Mode Preview
+
+#Preview ("Dark Mode Preview") {
+    ContentView()
+        .preferredColorScheme(.dark)
 }
