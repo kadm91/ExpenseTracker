@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct ExpenseTrackerApp: App {
     
+    
+    
    @State var transactionListVM = TransactionLIstViewModel()
     
     var body: some Scene {

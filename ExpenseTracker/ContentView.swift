@@ -16,9 +16,7 @@ struct ContentView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     title
-                    ForEach(vm.transactions) { transaction in
-                        TransactionRow(transaction: transaction)
-                    }
+                    RecentTransactionList()
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -63,7 +61,7 @@ extension ContentView {
 #Preview("Light Mode Preview"){
     ContentView()
         .environment(TransactionLIstViewModel())
-
+    
 }
 
 //MARK: - Dark Mode Preview
