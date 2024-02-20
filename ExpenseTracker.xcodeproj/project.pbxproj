@@ -18,6 +18,7 @@
 		001ACD682B850D7B003F3345 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 001ACD672B850D7B003F3345 /* SwiftUIFontIcon */; };
 		001ACD6A2B850EAD003F3345 /* TransactionLIstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD692B850EAD003F3345 /* TransactionLIstViewModel.swift */; };
 		001ACD6E2B851428003F3345 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD6D2B851428003F3345 /* DateManager.swift */; };
+		001ACD702B851E8C003F3345 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		001ACD642B850586003F3345 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		001ACD692B850EAD003F3345 /* TransactionLIstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionLIstViewModel.swift; sourceTree = "<group>"; };
 		001ACD6D2B851428003F3345 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				001ACD502B8456C6003F3345 /* ExpenseTrackerApp.swift */,
 				001ACD522B8456C6003F3345 /* ContentView.swift */,
+				001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */,
 				001ACD642B850586003F3345 /* TransactionRow.swift */,
 				001ACD6D2B851428003F3345 /* DateManager.swift */,
 				001ACD692B850EAD003F3345 /* TransactionLIstViewModel.swift */,
@@ -169,6 +172,7 @@
 				001ACD532B8456C6003F3345 /* ContentView.swift in Sources */,
 				001ACD652B850586003F3345 /* TransactionRow.swift in Sources */,
 				001ACD6E2B851428003F3345 /* DateManager.swift in Sources */,
+				001ACD702B851E8C003F3345 /* RecentTransactionList.swift in Sources */,
 				001ACD5F2B84FD66003F3345 /* Extensions.swift in Sources */,
 				001ACD512B8456C6003F3345 /* ExpenseTrackerApp.swift in Sources */,
 			);

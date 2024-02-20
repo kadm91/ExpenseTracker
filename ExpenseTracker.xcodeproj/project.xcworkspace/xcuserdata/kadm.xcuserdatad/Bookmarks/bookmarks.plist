@@ -10,15 +10,15 @@
 				<key>location-parameters</key>
 				<dict>
 					<key>EndingColumnNumber</key>
-					<string>4</string>
+					<string>0</string>
 					<key>EndingLineNumber</key>
-					<string>16</string>
+					<string>14</string>
 					<key>StartingColumnNumber</key>
 					<string>0</string>
 					<key>StartingLineNumber</key>
-					<string>16</string>
+					<string>13</string>
 					<key>Timestamp</key>
-					<string>730143169.090224</string>
+					<string>730143369.12125</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,15 +34,16 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string>    </string>
+				<string>    func getTransaction() async throws -&gt; [Transaction] {
+</string>
 				<key>leading</key>
-				<string>    
+				<string>    private let url = URL(string: "https://designcode.io/data/transactions.json")!
     
 </string>
 				<key>trailing</key>
-				<string>func getTransaction() async throws -&gt; [Transaction] {
-        async let (data, _) = URLSession.shared.data(from: url)
+				<string>        async let (data, _) = URLSession.shared.data(from: url)
         let transactions = try await JSONDecoder().decode([Transaction].self, from: data)
+        return transactions
 </string>
 			</dict>
 			<key>title</key>

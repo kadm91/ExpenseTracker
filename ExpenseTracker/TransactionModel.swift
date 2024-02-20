@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Transaction: Identifiable, Codable {
+//MARK: - Transaction
+
+struct Transaction: Identifiable, Codable, Hashable {
     let id: Int
     let date: String
     let institution: String
@@ -27,18 +29,18 @@ struct Transaction: Identifiable, Codable {
         date.dateParsed()
     }
     
-    
-    
-    
-    
-    
     var signedAmount: Double {
         return type == TransactionType.credit.rawValue ? amount : -amount
     }
 }
 
+//MARK: - TransactionType
+
 enum TransactionType: String {
     case debit, credit
 }
 
-
+//MARK: - Category
+struct Category {
+    
+}

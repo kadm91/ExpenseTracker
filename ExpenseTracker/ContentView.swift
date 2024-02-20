@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var vm = TransactionLIstViewModel()
+    @Environment (TransactionLIstViewModel.self) var vm
     
     var body: some View {
         NavigationStack {
@@ -62,6 +62,7 @@ extension ContentView {
 
 #Preview("Light Mode Preview"){
     ContentView()
+        .environment(TransactionLIstViewModel())
 
 }
 
@@ -69,5 +70,6 @@ extension ContentView {
 
 #Preview ("Dark Mode Preview") {
     ContentView()
+        .environment(TransactionLIstViewModel())
         .preferredColorScheme(.dark)
 }
