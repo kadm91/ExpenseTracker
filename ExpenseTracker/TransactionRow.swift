@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIFontIcon
 
 struct TransactionRow: View {
     
@@ -13,11 +14,19 @@ struct TransactionRow: View {
     
     var body: some View {
         HStack (spacing: 20) {
+            
+            transactionIcon
+            
             VStack (alignment: .leading, spacing: 6) {
                 transactionMerchant
                 transactionCategory
                 transactionDate
             }
+            
+            Spacer()
+            
+            transactionAmount
+          
         }
         .padding(.vertical, 8)
     }
@@ -51,8 +60,22 @@ private extension TransactionRow {
             .foregroundStyle(.secondary)
     }
     
+    //MARK: - Transaction Amount
+    var transactionAmount: some View {
+        Text(transaction.signedAmount, format: .currency(code: "USD"))
+            .bold()
+            .foregroundStyle(transaction.type == TransactionType.credit.rawValue ? Color.text : .primary)
+    }
     
-    
+    //MARK: - Transaction Icon
+    var transactionIcon: some View {
+        RoundedRectangle(cornerRadius: 20, style: .continuous)
+            .fill(Color.icon.opacity(0.3))
+            .frame(width: 44, height: 44)
+            .overlay {
+                FontIcon.text(.awesome5Solid(code: .icons), fontsize: 24, color: Color.icon)
+            }
+    }
     
 }
 

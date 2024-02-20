@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var vm = TransactionLIstViewModel()
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     title
+                    ForEach(vm.transactions) { transaction in
+                        TransactionRow(transaction: transaction)
+                    }
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -25,7 +31,6 @@ struct ContentView: View {
                 }
             }
         }
-    
     }
 }
 
