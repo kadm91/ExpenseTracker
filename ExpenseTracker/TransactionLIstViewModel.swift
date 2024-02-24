@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Collections
 
-typealias TransactionGroup = Dictionary<String, [Transaction]>
+typealias TransactionGroup = OrderedDictionary<String, [Transaction]>
 
 @Observable
 final class TransactionLIstViewModel {

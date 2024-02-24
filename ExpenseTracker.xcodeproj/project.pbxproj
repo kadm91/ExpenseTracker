@@ -20,6 +20,13 @@
 		001ACD6E2B851428003F3345 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD6D2B851428003F3345 /* DateManager.swift */; };
 		001ACD702B851E8C003F3345 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */; };
 		00CFBCBD2B8910DE00789431 /* TansactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFBCBC2B8910DE00789431 /* TansactionList.swift */; };
+		00CFBCC02B896FEF00789431 /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCBF2B896FEF00789431 /* BitCollections */; };
+		00CFBCC22B896FEF00789431 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC12B896FEF00789431 /* Collections */; };
+		00CFBCC42B896FEF00789431 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC32B896FEF00789431 /* DequeModule */; };
+		00CFBCC62B896FEF00789431 /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC52B896FEF00789431 /* HashTreeCollections */; };
+		00CFBCC82B896FEF00789431 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC72B896FEF00789431 /* HeapModule */; };
+		00CFBCCA2B896FEF00789431 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC92B896FEF00789431 /* OrderedCollections */; };
+		00CFBCCC2B896FEF00789431 /* _RopeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCCB2B896FEF00789431 /* _RopeModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CFBCC62B896FEF00789431 /* HashTreeCollections in Frameworks */,
+				00CFBCC22B896FEF00789431 /* Collections in Frameworks */,
+				00CFBCC42B896FEF00789431 /* DequeModule in Frameworks */,
+				00CFBCC02B896FEF00789431 /* BitCollections in Frameworks */,
+				00CFBCC82B896FEF00789431 /* HeapModule in Frameworks */,
+				00CFBCCA2B896FEF00789431 /* OrderedCollections in Frameworks */,
+				00CFBCCC2B896FEF00789431 /* _RopeModule in Frameworks */,
 				001ACD682B850D7B003F3345 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +125,13 @@
 			name = ExpenseTracker;
 			packageProductDependencies = (
 				001ACD672B850D7B003F3345 /* SwiftUIFontIcon */,
+				00CFBCBF2B896FEF00789431 /* BitCollections */,
+				00CFBCC12B896FEF00789431 /* Collections */,
+				00CFBCC32B896FEF00789431 /* DequeModule */,
+				00CFBCC52B896FEF00789431 /* HashTreeCollections */,
+				00CFBCC72B896FEF00789431 /* HeapModule */,
+				00CFBCC92B896FEF00789431 /* OrderedCollections */,
+				00CFBCCB2B896FEF00789431 /* _RopeModule */,
 			);
 			productName = ExpenseTracker;
 			productReference = 001ACD4D2B8456C6003F3345 /* ExpenseTracker.app */;
@@ -142,6 +163,7 @@
 			mainGroup = 001ACD442B8456C6003F3345;
 			packageReferences = (
 				001ACD662B850D7B003F3345 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 001ACD4E2B8456C6003F3345 /* Products */;
 			projectDirPath = "";
@@ -394,6 +416,14 @@
 				kind = branch;
 			};
 		};
+		00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -401,6 +431,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 001ACD662B850D7B003F3345 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
 			productName = SwiftUIFontIcon;
+		};
+		00CFBCBF2B896FEF00789431 /* BitCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = BitCollections;
+		};
+		00CFBCC12B896FEF00789431 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		00CFBCC32B896FEF00789431 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		00CFBCC52B896FEF00789431 /* HashTreeCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HashTreeCollections;
+		};
+		00CFBCC72B896FEF00789431 /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
+		00CFBCC92B896FEF00789431 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		00CFBCCB2B896FEF00789431 /* _RopeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = _RopeModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
