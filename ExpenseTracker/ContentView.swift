@@ -6,23 +6,34 @@
 //
 
 import SwiftUI
+import Charts
+
 
 struct ContentView: View {
     
     @Environment (TransactionLIstViewModel.self) var vm
     
+    
+  private var demoData: [Double] = [8, 2, 4, 6, 12, 9, 2]
+    
+    
+    
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    title
+                VStack(alignment: .leading, spacing: 20) {
+                    OverviewChart()
                     RecentTransactionList()
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
             }
+            .onAppear {
+                //vm.groupexpences()
+            }
             .background(Color.background)
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Overview")
+            //.navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem {
                     notificationIcon

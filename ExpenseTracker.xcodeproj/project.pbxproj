@@ -27,6 +27,8 @@
 		00CFBCC82B896FEF00789431 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC72B896FEF00789431 /* HeapModule */; };
 		00CFBCCA2B896FEF00789431 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCC92B896FEF00789431 /* OrderedCollections */; };
 		00CFBCCC2B896FEF00789431 /* _RopeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCCB2B896FEF00789431 /* _RopeModule */; };
+		00CFBCCF2B89715200789431 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 00CFBCCE2B89715200789431 /* SwiftUICharts */; };
+		00CFBCD12B89BF3A00789431 /* OverviewChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFBCD02B89BF3A00789431 /* OverviewChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		001ACD6D2B851428003F3345 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 		00CFBCBC2B8910DE00789431 /* TansactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TansactionList.swift; sourceTree = "<group>"; };
+		00CFBCD02B89BF3A00789431 /* OverviewChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CFBCCF2B89715200789431 /* SwiftUICharts in Frameworks */,
 				00CFBCC62B896FEF00789431 /* HashTreeCollections in Frameworks */,
 				00CFBCC22B896FEF00789431 /* Collections in Frameworks */,
 				00CFBCC42B896FEF00789431 /* DequeModule in Frameworks */,
@@ -85,6 +89,7 @@
 			children = (
 				001ACD502B8456C6003F3345 /* ExpenseTrackerApp.swift */,
 				001ACD522B8456C6003F3345 /* ContentView.swift */,
+				00CFBCD02B89BF3A00789431 /* OverviewChart.swift */,
 				001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */,
 				001ACD642B850586003F3345 /* TransactionRow.swift */,
 				001ACD6D2B851428003F3345 /* DateManager.swift */,
@@ -132,6 +137,7 @@
 				00CFBCC72B896FEF00789431 /* HeapModule */,
 				00CFBCC92B896FEF00789431 /* OrderedCollections */,
 				00CFBCCB2B896FEF00789431 /* _RopeModule */,
+				00CFBCCE2B89715200789431 /* SwiftUICharts */,
 			);
 			productName = ExpenseTracker;
 			productReference = 001ACD4D2B8456C6003F3345 /* ExpenseTracker.app */;
@@ -164,6 +170,7 @@
 			packageReferences = (
 				001ACD662B850D7B003F3345 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 				00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				00CFBCCD2B89715200789431 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 001ACD4E2B8456C6003F3345 /* Products */;
 			projectDirPath = "";
@@ -195,6 +202,7 @@
 				00CFBCBD2B8910DE00789431 /* TansactionList.swift in Sources */,
 				001ACD612B850171003F3345 /* TransactionModel.swift in Sources */,
 				001ACD6A2B850EAD003F3345 /* TransactionLIstViewModel.swift in Sources */,
+				00CFBCD12B89BF3A00789431 /* OverviewChart.swift in Sources */,
 				001ACD532B8456C6003F3345 /* ContentView.swift in Sources */,
 				001ACD652B850586003F3345 /* TransactionRow.swift in Sources */,
 				001ACD6E2B851428003F3345 /* DateManager.swift in Sources */,
@@ -424,6 +432,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		00CFBCCD2B89715200789431 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -466,6 +482,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 00CFBCBE2B896FEF00789431 /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = _RopeModule;
+		};
+		00CFBCCE2B89715200789431 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CFBCCD2B89715200789431 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
