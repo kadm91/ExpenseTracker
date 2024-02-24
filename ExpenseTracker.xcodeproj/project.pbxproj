@@ -19,6 +19,7 @@
 		001ACD6A2B850EAD003F3345 /* TransactionLIstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD692B850EAD003F3345 /* TransactionLIstViewModel.swift */; };
 		001ACD6E2B851428003F3345 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD6D2B851428003F3345 /* DateManager.swift */; };
 		001ACD702B851E8C003F3345 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */; };
+		00CFBCBD2B8910DE00789431 /* TansactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFBCBC2B8910DE00789431 /* TansactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		001ACD692B850EAD003F3345 /* TransactionLIstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionLIstViewModel.swift; sourceTree = "<group>"; };
 		001ACD6D2B851428003F3345 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		001ACD6F2B851E8C003F3345 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
+		00CFBCBC2B8910DE00789431 /* TansactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TansactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				001ACD642B850586003F3345 /* TransactionRow.swift */,
 				001ACD6D2B851428003F3345 /* DateManager.swift */,
 				001ACD692B850EAD003F3345 /* TransactionLIstViewModel.swift */,
+				00CFBCBC2B8910DE00789431 /* TansactionList.swift */,
 				001ACD602B850171003F3345 /* TransactionModel.swift */,
 				001ACD5E2B84FD66003F3345 /* Extensions.swift */,
 				001ACD542B8456C8003F3345 /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				001ACD632B8504EC003F3345 /* PreviewData.swift in Sources */,
+				00CFBCBD2B8910DE00789431 /* TansactionList.swift in Sources */,
 				001ACD612B850171003F3345 /* TransactionModel.swift in Sources */,
 				001ACD6A2B850EAD003F3345 /* TransactionLIstViewModel.swift in Sources */,
 				001ACD532B8456C6003F3345 /* ContentView.swift in Sources */,

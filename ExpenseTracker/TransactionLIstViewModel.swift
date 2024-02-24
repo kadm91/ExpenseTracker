@@ -7,8 +7,14 @@
 
 import Foundation
 
+typealias TransactionGroup = Dictionary<String, [Transaction]>
+
 @Observable
 final class TransactionLIstViewModel {
+    
+    
+    
+    
     var transactions = [Transaction]()
     @ObservationIgnored private let dataServices = DataManager()
     
@@ -26,5 +32,10 @@ final class TransactionLIstViewModel {
         }
     }
     
+    func groupTransactionByMonth() -> TransactionGroup {
+        guard !transactions.isEmpty else { return [:] }
+        
+        return TransactionGroup(grouping: transactions) { $0.month }
+    }
     
 }

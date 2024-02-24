@@ -19,7 +19,7 @@ struct RecentTransactionList: View {
                 Spacer()
                 
                 NavigationLink {
-                    
+                    TransactionList()
                 } label: {
                   navigationLinkLabel
                 }
