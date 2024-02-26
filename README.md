@@ -1,6 +1,6 @@
 # Expence Tracker
 
-Expense Tracker was made from a tutorial, I added the chart using the new swiftUI charts framework.
+Expense Tracker was created from a tutorial. I changed the chard implementation from a third-party library to the new swiftUI charts framework.
 <br>
 
  ----------------------------------------------
