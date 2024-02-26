@@ -11,7 +11,7 @@ Expense Tracker was made from a tutorial, I added the chart using the new swiftU
 <br>
 
 <p align="center">
-<img src="https://github.com/kadm91/assets/blob/main/Nasa%20Images.gif](https://github.com/kadm91/assets/blob/main/ExpenseTracker.gif"  width="315" height="645" /> 
+<img src="https://github.com/kadm91/assets/blob/main/ExpenseTracker.gif"  width="315" height="645" /> 
 </p>
 
  ----------------------------------------------
